@@ -1,10 +1,18 @@
+import { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import style from './Header.module.scss'
 import layout from '../../styles/Layout.module.scss'
-import { useState } from 'react'
 
 function Header() {
   const [toggle, setToggle] = useState(false)
+
+  useEffect(() => {
+    window.onscroll = (e) => {
+      window.scrollY >= 50
+        ? header.classList.add(style['scroll-header'])
+        : header.classList.remove(style['scroll-header'])
+    }
+  }, [])
 
   const clickHandler = (e) => {
     if (e.target.tagName === 'A') {
@@ -31,22 +39,22 @@ function Header() {
         >
           <ul className={style.nav__list} onClick={clickHandler}>
             <li className={style.nav__item}>
-              <a href='#home' className={style.nav__link} title="Home">
+              <a href='#home' className={style.nav__link} title='Home'>
                 Home
               </a>
             </li>
             <li className={style.nav__item}>
-              <a href='#specs' className={style.nav__link} title="Specs">
+              <a href='#specs' className={style.nav__link} title='Specs'>
                 Specs
               </a>
             </li>
             <li className={style.nav__item}>
-              <a href='#case' className={style.nav__link} title="Case">
+              <a href='#case' className={style.nav__link} title='Case'>
                 Case
               </a>
             </li>
             <li className={style.nav__item}>
-              <a href='#products' className={style.nav__link} title="Products">
+              <a href='#products' className={style.nav__link} title='Products'>
                 Products
               </a>
             </li>

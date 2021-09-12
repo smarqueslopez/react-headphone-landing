@@ -5,6 +5,10 @@
   left: 0;
   z-index: var(--z-fixed);
   background: transparent;
+
+  &.scroll-header {
+    background-color: var(--body-color);
+  }
 }
 
 .nav {
