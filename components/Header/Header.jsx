@@ -1,4 +1,4 @@
-import classNames from 'classNames'
+import classNames from 'classnames'
 import style from './Header.module.scss'
 import layout from '../../styles/Layout.module.scss'
 import { useState } from 'react'
