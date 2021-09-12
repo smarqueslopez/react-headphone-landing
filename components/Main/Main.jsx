@@ -1,5 +1,7 @@
+import style from './Main.module.scss'
+
 function Main() {
-  return <main></main>
+  return <main className={style.main}></main>
 }
 
 export default Main
