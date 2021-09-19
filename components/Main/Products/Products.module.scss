@@ -85,4 +85,21 @@
       width: 95px;
     }
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__card {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+
+    &__img {
+      width: 120px;
+    }
+  }
 }

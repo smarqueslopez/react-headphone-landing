@@ -10,10 +10,18 @@
     width: 90px;
   }
 
+  a:nth-of-type(3) {
+    margin-top: 1rem;
+  }
+
   /* Extralarge devices */
   @media screen and (min-width: 1024px) {
     &__img {
-      width: 100px;
+      width: 175px;
+    }
+
+    a:nth-of-type(3) {
+      margin-top: 1.5rem;
     }
   }
 }
