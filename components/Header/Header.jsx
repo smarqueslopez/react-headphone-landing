@@ -7,16 +7,16 @@ function Header() {
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
-    const header = document.getElementById('header')
-    window.onscroll = (e) => {
+    window.addEventListener('scroll', (e) => {
+      const header = document.getElementById('header')
       window.scrollY >= 50
         ? header.classList.add(style['scroll-header'])
         : header.classList.remove(style['scroll-header'])
-    }
+    })
   }, [])
 
   useEffect(() => {
-    window.onscroll = (e) => {
+    window.addEventListener('scroll', (e) => {
       const sectionList = document.querySelectorAll('section[id]')
       sectionList.forEach((section) => {
         const querySelector = `.${classNames(
@@ -38,7 +38,7 @@ function Header() {
           }
         }
       })
-    }
+    })
   })
 
   const clickHandler = (e) => {
