@@ -69,7 +69,14 @@ function Header() {
         >
           <ul className={style.nav__list} onClick={clickHandler}>
             <li className={style.nav__item}>
-              <a href='#home' className={style.nav__link} title='Home'>
+              <a
+                href='#home'
+                className={classNames({
+                  [style.nav__link]: style.nav__link,
+                  [style['nav__link--active']]: style['nav__link--active']
+                })}
+                title='Home'
+              >
                 Home
               </a>
             </li>
