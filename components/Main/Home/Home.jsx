@@ -5,7 +5,7 @@ import layout from '../../../styles/Layout.module.scss'
 function Home() {
   return (
     <section
-      id="home"
+      id='home'
       className={classNames({
         [style.home]: style.home,
         [layout.section]: layout.section
@@ -22,8 +22,8 @@ function Home() {
           <img
             src='/images/home.png'
             className={style.home__img}
-            alt='Home'
-            title='Home'
+            alt='Beats Studio 3'
+            title='Beats Studio 3'
           />
         </div>
 
