@@ -3,6 +3,8 @@ import 'remixicon/fonts/remixicon.css'
 import Header from '../components/Header/Header'
 import Main from '../components/Main/Main'
 import Footer from '../components/Footer/Footer'
+import ScrollUp from '../components/ScrollUp/ScrollUp'
+
 export default function Home() {
   return (
     <>
@@ -23,6 +25,8 @@ export default function Home() {
         <Main />
         {/* Footer */}
         <Footer />
+        { /* Scroll up */}
+        <ScrollUp />
       </>
     </>
   )
