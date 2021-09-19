@@ -7,6 +7,7 @@ function Header() {
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
+    const header = document.getElementById('header')
     window.onscroll = (e) => {
       window.scrollY >= 50
         ? header.classList.add(style['scroll-header'])
