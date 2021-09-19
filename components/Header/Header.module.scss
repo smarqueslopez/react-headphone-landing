@@ -60,6 +60,13 @@
     background-clip: text;
     transition: 0.4s;
 
+    &--active {
+      background: var(--white-color);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
     &:hover {
       background: var(--white-color);
       color: transparent;

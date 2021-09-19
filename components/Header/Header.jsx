@@ -15,6 +15,32 @@ function Header() {
     }
   }, [])
 
+  useEffect(() => {
+    window.onscroll = (e) => {
+      const sectionList = document.querySelectorAll('section[id]')
+      sectionList.forEach((section) => {
+        const querySelector = `.${classNames(
+          style.nav__menu
+        )} a[href*='${section.getAttribute('id')}']`
+        const element = document.querySelector(querySelector)
+
+        if (element) {
+          const scrollY = window.scrollY
+          const sectionTop = section.offsetTop - 50
+          const activeLinkClass = classNames(style['nav__link--active'])
+          if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + section.offsetHeight
+          ) {
+            element.classList.add(activeLinkClass)
+          } else {
+            element.classList.remove(activeLinkClass)
+          }
+        }
+      })
+    }
+  })
+
   const clickHandler = (e) => {
     if (e.target.tagName === 'A') {
       setToggle(!toggle)
