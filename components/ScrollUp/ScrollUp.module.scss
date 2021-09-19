@@ -10,15 +10,15 @@
   z-index: var(--z-tooltip);
   transition: 0.4s;
 
+  &--show {
+    bottom: 5rem;
+  }
+
   &:hover {
     background-color: var(--black-color);
     opacity: 1;
   }
 
-  &--show {
-    bottom: 5rem;
-  }
-  
   &__icon {
     color: var(--white-color);
     font-size: 1.35rem;
