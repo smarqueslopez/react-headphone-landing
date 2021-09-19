@@ -34,4 +34,23 @@
       position: initial;
     }
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      grid-template-columns: 250px max-content;
+      justify-content: center;
+      column-gap: 5rem;
+      padding: 3rem;
+    }
+
+    &__title {
+      font-size: var(--h2-font-size);
+      margin-bottom: var(--m-1);
+    }
+
+    &__description {
+      margin-bottom: var(--m-2);
+    }
+  }
 }

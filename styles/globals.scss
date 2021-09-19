@@ -22,6 +22,11 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    margin: 0;
+  }
 }
 
 h1,

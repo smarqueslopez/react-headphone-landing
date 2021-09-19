@@ -84,4 +84,21 @@
       left: 0;
     }
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__data {
+      padding-top: 8rem;
+    }
+
+    &__img {
+      top: -9rem;
+      left: 4rem;
+    }
+  }
 }

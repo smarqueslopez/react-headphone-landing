@@ -76,4 +76,11 @@
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
+    }
+  }
 }

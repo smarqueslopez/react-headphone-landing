@@ -56,4 +56,11 @@
       position: initial;
     }
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__img {
+      width: 300px;
+    }
+  }
 }

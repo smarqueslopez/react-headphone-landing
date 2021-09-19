@@ -67,4 +67,22 @@
       justify-content: center;
     }
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      grid-template-columns: repeat(3, 162px);
+      gap: 6rem 3rem;
+      padding-top: 5rem;
+    }
+
+    &__card {
+      height: 152px;
+      padding: 0.85rem;
+    }
+
+    &__img {
+      width: 95px;
+    }
+  }
 }

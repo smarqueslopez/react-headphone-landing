@@ -53,4 +53,19 @@
       padding: 0;
     }
   }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      column-gap: 5rem;
+    }
+
+    &__img {
+      width: 300px;
+    }
+
+    &__description {
+      margin-bottom: var(--m-2);
+    }
+  }
 }
