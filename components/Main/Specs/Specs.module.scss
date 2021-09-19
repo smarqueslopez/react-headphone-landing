@@ -43,4 +43,17 @@
       width: 200px;
     }
   }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+
+    &__img {
+      position: initial;
+    }
+  }
 }

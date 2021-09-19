@@ -59,4 +59,12 @@
       justify-content: center;
     }
   }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: repeat(3, 142px);
+      justify-content: center;
+    }
+  }
 }

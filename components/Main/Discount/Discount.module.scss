@@ -21,4 +21,17 @@
     top: 4rem;
     right: -11rem;
   }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__img {
+      position: initial;
+    }
+  }
 }

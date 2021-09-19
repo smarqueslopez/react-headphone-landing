@@ -68,4 +68,20 @@
       font-size: var(--small-font-size);
     }
   }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: 0.8fr 1fr;
+    }
+
+    &__data {
+      padding-top: 2rem;
+    }
+
+    &__img {
+      top: -7rem;
+      left: 0;
+    }
+  }
 }
