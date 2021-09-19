@@ -8,7 +8,6 @@ import ScrollUp from '../components/ScrollUp/ScrollUp'
 export default function Home() {
   return (
     <>
-      {/* METAPAGE INFO */}
       <Head>
         <title>React Responsive landing page headphones</title>
         <meta
@@ -17,15 +16,10 @@ export default function Home() {
         />
         <link rel='icon' href='/images/favicon.png' />
       </Head>
-      {/* PAGE */}
       <>
-        {/* Header */}
         <Header />
-        {/* Main */}
         <Main />
-        {/* Footer */}
         <Footer />
-        { /* Scroll up */}
         <ScrollUp />
       </>
     </>
