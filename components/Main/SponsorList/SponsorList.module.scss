@@ -9,4 +9,11 @@
   &__img {
     width: 90px;
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__img {
+      width: 100px;
+    }
+  }
 }

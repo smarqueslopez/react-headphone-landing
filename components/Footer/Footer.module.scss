@@ -83,4 +83,15 @@
       grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
     }
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__container {
+      padding-top: 3rem;
+    }
+
+    &__copy {
+      margin-top: 9rem;
+    }
+  }
 }

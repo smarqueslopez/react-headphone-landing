@@ -53,4 +53,11 @@
       margin-bottom: var(--m-2);
     }
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__img {
+      width: 350px;
+    }
+  }
 }

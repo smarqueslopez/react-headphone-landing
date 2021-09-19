@@ -40,6 +40,13 @@
   @media screen and (min-width: 767px) {
     padding: 6rem 0 2rem;
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .button {

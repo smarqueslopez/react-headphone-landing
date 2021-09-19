@@ -101,4 +101,21 @@
       left: 4rem;
     }
   }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__img {
+      width: 300px;
+      top: -15rem;
+    }
+
+    &__title {
+      top: -5rem;
+      left: 3.5rem;
+    }
+
+    &__description {
+      padding-right: 5rem;
+    }
+  }
 }
