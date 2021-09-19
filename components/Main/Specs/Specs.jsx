@@ -76,14 +76,14 @@ function Specs() {
                 Supports Apple Siri and Google
               </span>
             </div>
-            <div>
-              <img
-                src='/images/specs.png'
-                className={style.specs__img}
-                alt='specs'
-                title='specs'
-              />
-            </div>
+          </div>
+          <div>
+            <img
+              src='/images/specs.png'
+              className={style.specs__img}
+              alt='specs'
+              title='specs'
+            />
           </div>
         </div>
       </article>
