@@ -18,4 +18,21 @@
     margin-bottom: var(--m-1-5);
     line-height: var(--text-line-height);
   }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__container {
+      grid-template-columns: 0.6fr 1fr;
+    }
+
+    &__data {
+      padding: 0;
+    }
+
+    &__img {
+      width: 220px;
+      top: -2rem;
+      left: -9rem;
+    }
+  }
 }

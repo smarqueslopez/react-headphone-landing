@@ -47,4 +47,25 @@
     font-weight: var(--font-semi-bold);
     margin-left: var(--m-0-75);
   }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__img {
+      width: 200px;
+      top: -13rem;
+    }
+
+    &__data {
+      padding-top: 1rem;
+    }
+
+    &__title {
+      top: -4rem;
+      font-size: var(--bigger-font-size);
+    }
+
+    &__description {
+      font-size: var(--small-font-size);
+    }
+  }
 }

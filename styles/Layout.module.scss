@@ -1,6 +1,12 @@
 .container {
   margin-left: var(--m-1-5);
   margin-right: var(--m-1-5);
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    margin-left: var(--m-1);
+    margin-right: var(--m-1);
+  }
 }
 
 .grid {
@@ -21,6 +27,13 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+  }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__title {
+      font-size: var(--big-font-size);
+    }
   }
 }
 

@@ -51,4 +51,12 @@
     padding: 0.5rem;
     border-radius: 0.35rem;
   }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__container {
+      grid-template-columns: 142px;
+      justify-content: center;
+    }
+  }
 }
