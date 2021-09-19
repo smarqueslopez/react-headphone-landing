@@ -18,26 +18,27 @@
 
   /*========== Font and Typography =========*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 5rem;
-  --bigger-font-size: 3.5rem;
-  --big-font-size: 2.5rem;
+  --text-line-height: 2rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-  --text-line-height: 2rem;
+  --small-font-size: 0.813rem;
+  --normal-font-size: 0.938rem;
+  --big-font-size: 2.5rem;
+  --bigger-font-size: 3.5rem;
+  --biggest-font-size: 5rem;
   --font-medium: 500;
   --font-semi-bold: 600;
 
   /*=============== Measures ===============*/
   --header-height: 3rem;
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
+
+  /* Margins */
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
 
   /*================ Z-index ===============*/
   --z-tooltip: 10;

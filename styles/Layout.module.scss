@@ -1,6 +1,6 @@
 .container {
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: var(--m-1-5);
+  margin-right: var(--m-1-5);
 }
 
 .grid {
@@ -13,7 +13,7 @@
   &__title {
     font-size: var(--bigger-font-size);
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--m-2-5);
   }
 
   &__title-gradient {
