@@ -31,20 +31,21 @@ function Discount() {
               [layout.button]: layout.button,
               [layout['button--flex']]: layout['button--flex']
             })}
+            title='Show now'
           >
             <i
               className={classNames('ri-shopping-bag-line', {
                 [layout.button__icon]: layout.button__icon
               })}
-            ></i>{' '}
+            ></i>
             Shop Now
           </a>
         </div>
 
         <img
           src='/images/discount.png'
-          alt='discount'
-          title='discount'
+          alt='Beats Studio 3'
+          title='Beats Studio 3'
           className={style.discount__img}
         />
       </article>

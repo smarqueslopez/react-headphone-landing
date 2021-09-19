@@ -46,7 +46,7 @@ function Home() {
                 [layout['button--flex']]: layout['button--flex']
               })}
             >
-              <span className={layout['button--flex']}>
+              <span className={layout['button--flex']} title='Add to bag'>
                 <i
                   className={classNames('ri-shopping-bag-line', {
                     [layout.button__icon]: layout.button__icon

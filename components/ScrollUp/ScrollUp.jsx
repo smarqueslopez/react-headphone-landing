@@ -14,7 +14,12 @@ function ScrollUp() {
   }, [])
 
   return (
-    <a href='#' className={style['scroll-up']} id='scroll-up'>
+    <a
+      href='#'
+      className={style['scroll-up']}
+      id='scroll-up'
+      title='Back to top!'
+    >
       <i
         className={classNames('ri-arrow-up-s-line', {
           [style['scroll-up__icon']]: style['scroll-up__icon']

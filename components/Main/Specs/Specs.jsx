@@ -81,8 +81,8 @@ function Specs() {
             <img
               src='/images/specs.png'
               className={style.specs__img}
-              alt='specs'
-              title='specs'
+              alt='Beats Studio 3 specs'
+              title='Beats Studio 3 specs'
             />
           </div>
         </div>

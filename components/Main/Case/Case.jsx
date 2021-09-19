@@ -33,8 +33,8 @@ function Case() {
             <img
               src='/images/case.png'
               className={style.case__img}
-              alt='case'
-              title='case'
+              alt='Beats Studio 3 Case'
+              title='Beats Studio 3 Case'
             />
           </div>
 
@@ -49,6 +49,7 @@ function Case() {
                 [layout.button]: layout.button,
                 [layout['button--flex']]: layout['button--flex']
               })}
+              title='More info'
             >
               <i
                 className={classNames('ri-information-line', {

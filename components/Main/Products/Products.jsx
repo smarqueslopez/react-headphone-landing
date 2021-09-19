@@ -29,13 +29,12 @@ function Products() {
             [layout.grid]: layout.grid
           })}
         >
-          <div className={style.products__card}>
+          <div className={style.products__card} title='Black version'>
             <figure className={style.products__content}>
               <img
                 src='/images/product1.png'
                 className={style.products__img}
-                alt='product1'
-                title='product1'
+                alt='Black version'
               />
             </figure>
             <figcaption className={style.products__caption}>
@@ -47,6 +46,7 @@ function Products() {
                   [layout['button--flex']]: layout['button--flex'],
                   [style.products__button]: style.products__button
                 })}
+                title='Buy it now!'
               >
                 <i
                   className={classNames('ri-shopping-bag-line', {
@@ -57,13 +57,12 @@ function Products() {
             </figcaption>
           </div>
 
-          <div className={style.products__card}>
+          <div className={style.products__card} title='Red black version'>
             <figure className={style.products__content}>
               <img
                 src='/images/product2.png'
                 className={style.products__img}
-                alt='product2'
-                title='product2'
+                alt='Red black version'
               />
             </figure>
             <figcaption className={style.products__caption}>
@@ -75,6 +74,7 @@ function Products() {
                   [layout['button--flex']]: layout['button--flex'],
                   [style.products__button]: style.products__button
                 })}
+                title='Buy it now!'
               >
                 <i
                   className={classNames('ri-shopping-bag-line', {
@@ -85,13 +85,12 @@ function Products() {
             </figcaption>
           </div>
 
-          <div className={style.products__card}>
+          <div className={style.products__card} title='Night black version'>
             <figure className={style.products__content}>
               <img
                 src='/images/product3.png'
                 className={style.products__img}
-                alt='product3'
-                title='product3'
+                alt='Night black version'
               />
             </figure>
             <figcaption className={style.products__caption}>
@@ -103,6 +102,7 @@ function Products() {
                   [layout['button--flex']]: layout['button--flex'],
                   [style.products__button]: style.products__button
                 })}
+                title='Buy it now!'
               >
                 <i
                   className={classNames('ri-shopping-bag-line', {
@@ -113,13 +113,12 @@ function Products() {
             </figcaption>
           </div>
 
-          <div className={style.products__card}>
+          <div className={style.products__card} title='Blue version'>
             <figure className={style.products__content}>
               <img
                 src='/images/product4.png'
                 className={style.products__img}
-                alt='product4'
-                title='product4'
+                alt='Blue version'
               />
             </figure>
             <figcaption className={style.products__caption}>
@@ -131,6 +130,7 @@ function Products() {
                   [layout['button--flex']]: layout['button--flex'],
                   [style.products__button]: style.products__button
                 })}
+                title='Buy it now!'
               >
                 <i
                   className={classNames('ri-shopping-bag-line', {
@@ -141,13 +141,12 @@ function Products() {
             </figcaption>
           </div>
 
-          <div className={style.products__card}>
+          <div className={style.products__card} title='Twilight gray version'>
             <figure className={style.products__content}>
               <img
                 src='/images/product5.png'
                 className={style.products__img}
-                alt='product4'
-                title='product4'
+                alt='Twilight gray version'
               />
             </figure>
             <figcaption className={style.products__caption}>

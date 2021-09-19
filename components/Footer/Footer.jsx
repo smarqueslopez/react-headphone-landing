@@ -26,22 +26,22 @@ function Footer() {
           <h3 className={style.footer__title}>Products</h3>
           <ul className={style.footer__links}>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Headphones'>
                 Headphones
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Earphones'>
                 Earphones
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Earbuds'>
                 Earbuds
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Accesories'>
                 Accesories
               </a>
             </li>
@@ -52,22 +52,22 @@ function Footer() {
           <h3 className={style.footer__title}>Support</h3>
           <ul className={style.footer__links}>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Product Help'>
                 Product Help
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Register'>
                 Register
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Updates'>
                 Updates
               </a>
             </li>
             <li>
-              <a href='#' className={style.footer__link}>
+              <a href='#' className={style.footer__link} title='Provides'>
                 Provides
               </a>
             </li>
@@ -86,6 +86,7 @@ function Footer() {
                 [layout.button]: layout.button,
                 [layout['button--flex']]: layout['button--flex']
               })}
+              title='Subscribe now!'
             >
               <i
                 className={classNames('ri-send-plane-line', {
@@ -101,6 +102,7 @@ function Footer() {
               className={style['footer__social-link']}
               target='_blank'
               rel='noreferrer'
+              title='Facebook'
             >
               <i className='ri-facebook-fill'></i>
             </a>
@@ -109,6 +111,7 @@ function Footer() {
               className={style['footer__social-link']}
               target='_blank'
               rel='noreferrer'
+              title='Instagram'
             >
               <i className='ri-instagram-line'></i>
             </a>
@@ -117,6 +120,7 @@ function Footer() {
               className={style['footer__social-link']}
               target='_blank'
               rel='noreferrer'
+              title='Twitter'
             >
               <i className='ri-twitter-line'></i>
             </a>
