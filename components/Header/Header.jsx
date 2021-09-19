@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import style from './Header.module.scss'
 import layout from '../../styles/Layout.module.scss'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 function Header() {
   const [toggle, setToggle] = useState(false)
+  const { width } = useWindowDimensions()
 
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
@@ -17,27 +19,28 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
-      const sectionList = document.querySelectorAll('section[id]')
-      sectionList.forEach((section) => {
-        const querySelector = `.${classNames(
-          style.nav__menu
-        )} a[href*='${section.getAttribute('id')}']`
-        const element = document.querySelector(querySelector)
-
-        if (element) {
-          const scrollY = window.scrollY
-          const sectionTop = section.offsetTop - 50
-          const activeLinkClass = classNames(style['nav__link--active'])
-          if (
-            scrollY > sectionTop &&
-            scrollY <= sectionTop + section.offsetHeight
-          ) {
-            element.classList.add(activeLinkClass)
-          } else {
-            element.classList.remove(activeLinkClass)
+      const navMenu = classNames(style.nav__menu)
+      if (navMenu) {
+        const sectionList = document.querySelectorAll('section[id]')
+        sectionList.forEach((section) => {
+          const sectionId = section.getAttribute('id')
+          const querySelector = `.${navMenu} a[href*='${sectionId}']`
+          const menuItem = document.querySelector(querySelector)
+          if (menuItem) {
+            const scrollY = window.scrollY
+            const sectionTop = section.offsetTop - 50
+            const activeLinkClass = classNames(style['nav__link--active'])
+            if (
+              scrollY > sectionTop &&
+              scrollY <= sectionTop + section.offsetHeight
+            ) {
+              menuItem.classList.add(activeLinkClass)
+            } else {
+              menuItem.classList.remove(activeLinkClass)
+            }
           }
-        }
-      })
+        })
+      }
     })
   })
 
@@ -61,7 +64,7 @@ function Header() {
         <div
           className={classNames({
             [style.nav__menu]: style.nav__menu,
-            [style['menu-show']]: toggle
+            [style['menu-show']]: toggle || width >= 767
           })}
         >
           <ul className={style.nav__list} onClick={clickHandler}>
