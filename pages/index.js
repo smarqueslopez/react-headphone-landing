@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>React Responsive landing page headphones</title>
+        <title>React Responsive Headphones landing page</title>
         <meta
           name='description'
-          content='React Responsive landing page headphones'
+          content='React Responsive Headphones landing page'
         />
         <link rel='icon' href='/images/favicon.png' />
       </Head>
